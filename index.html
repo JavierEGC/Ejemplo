@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>pagina1</title>
+	<!--BOOTSTRAP-->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<form action="pagina2.html" method="GET">
+<div class="responsive-table encabezado">
+	
+		<h2>Encuesta Salud Mental - Parte 1</h2>
+		<p>A continuación usted responderá una serie de preguntas relacionadas a factores sociodemográficos, laborales y relacionados a la infección por COVID-19 
+		<br>
+		<br>
+		<span >*Obligatorio</span>
+		 </p>
+
+	</div>
+	<div class="responsive-table genero">
+		<p>Género<span>*</span></p>
+		
+		<p><input type="radio" name="tipo1" value="Femenino">Femenino</p>
+		<p><input type="radio" name="tipo1" value="Masculino">Masculino</p>
+	</div>
+    <div class="responsive-table estadocivil">
+    	<p>Estado civil<span>*</span></p>
+    	<br>
+    	<p><input type="radio" name="tipo2" value="soltero">Soltero(a)</p>
+    	<p><input type="radio" name="tipo2" value="Casado">Casado(a)</p>
+    	<p><input type="radio" name="tipo2" value="Viudo">Viudo(a)</p>
+    	<p><input type="radio" name="tipo2" value="Divorciado">Divorciado(a)</p>
+    	<p><input type="radio" name="tipo2" value="Conviviente">Conviviente</p>
+    </div>
+    <div class="responsive-table edad">
+		<p>Edad <span>*</span></p>
+	
+		<p><input type="number" maxlength="2" required min="18" max="99" ></p>
+	</div>
+<div class="responsive-table hijos">
+	<p>Numero de hijos <span>*</span></p>
+		
+		<p><input type="number" maxlength="2" required min="0" max="99"></p>
+</div>
+	<div class="responsive-table distrito">
+	<p>Distrito de residencia <span>*</span></p>
+	<select name="elige__distrito" required>
+	<option disabled="" selected="">Elige</option>
+	<option value="Ancon">Ancon</option>
+	<option value="Ate">Ate</option>
+	<option value="Barranco">Barranco</option>
+	<option value="Bellavista">Bellavista</option>
+	<option value="Breña">Breña</option>
+	<option value="Callao">Callao</option>
+	<option value="Carabayllo">Carabayllo</option>
+	<option value="Carmen de la legua">Carmen de la legua</option>
+	<option value="Cercado de lima">Cercado de lima</option>
+	<option value="Chaclacayo">Chaclacayo</option>
+	<option value="Cieneguilla">Cieneguilla</option>
+	<option value="Comas">Comas</option>
+	<option value="El agustino">El agustino</option>
+	<option value="Jesus Maria">Jesus Maria</option>
+	<option value="La Molina">La Molina</option>
+	<option value="La Perla">La Perla</option>
+	<option value="La Punta">La Punta</option>
+	<option value="La victoria">La victoria</option>
+	<option value="Lince">Lince</option>
+	<option value="Los Olivos">Los Olivos</option>
+	<option value="Lurin">Lurin</option>
+	<option value="Lurigancho">Lurigancho</option>
+	<option value="Magdalena Del Mar">Magdalena Del Mar</option>
+	<option value="Miraflores">Miraflores</option>
+	<option value="Pachacamac">Pachacamac</option>
+	<option value="Pucusana">Pucusana</option>
+	<option value="Punta Hermosa">Punta Hermosa</option>
+	<option value="Rimac">Rimac</option>
+	<option value="San Bartolo">San Bartolo</option>
+	<option value="San Borja">San Borja</option>
+	<option value="San Isidro">San Isidro</option>
+	<option value="San Juan De Lurigancho">San Juan De Lurigancho</option>
+	<option value="San Juan De Miraflores">San Juan De Miraflores</option>
+	<option value="San Luis">San Luis</option>
+	<option value="San Martin De Porres">San Martin De Porres</option>
+	<option value="San Miguel">San Miguel</option>
+	<option value="Santa Anita">Santa Anita</option>
+	<option value="Santa Maria Del Mar">Santa Maria Del Mar</option>
+	<option value="Santa Rosa">Santa Rosa</option>
+	<option value="Santiago de Surco">Santiago de Surco</option>
+	<option value="Surquillo">Surquillo</option>
+	<option value="Ventanilla">Ventanilla</option>
+	<option value="Villa el Salvador">Villa el Salvador</option>
+	<option value="Villa Maria Del Triunfo">Villa Maria Del Triunfo</option>
+
+</select>
+</div>
+<div class="responsive-table ocupacion">
+		<p>
+			Ocupacion<span>*</span>
+		</p>
+	
+		<p><input type="radio" name="tipo3" value="Medico asistente">Medico asistente</p>
+	    <p><input type="radio" name="tipo3" value="cd">Medico resitente</p>
+		
+	</div>
+	<div class="responsive-table especialidad">
+		<p>
+			¿Cual es su especialidad?<span>*</span>
+		</p>
+	
+	<select name="responsive-table especialidad">
+	<option value="cardiologia">Cardiologia</option>
+	<option value="cirugia-cabezaycuello">Cirugia de cabeza y cuello</option>
+	<option value="cirugia-cardiobascular">Cirugia cardiobascular</option>
+	<option value="cirugia-generalylaparoscopica">cirugia General y laparoscopica</option>
+	<option value="cirugia-oncologica">Cirugia oncologica</option>
+
+	<option value="cirugia-pedriatico">Cirugia pedriatico</option>
+	<option value="dermatologia">Dermatologia</option>
+	<option value="electro-fisologia-cardiaca">Electro fisologia cardiaca</option>
+	<option value="edoncrinologia">Edoncrinologia</option>
+	<option value="edoncrinologia-pedriatica">Edoncrinologia pedriatica</option>
+
+	 
+     </select>
+ </div>
+<div class="responsive-table sede">
+			<p>
+			¿En que sede hospitalaria labora?<span>*</span>
+		</p>
+		<br>
+		<select name="sede-labora">
+	<option value="insn">Instituto Nacional de Salud del Niño(INSN)</option>
+	<option value="hch">Hospital Cayetano Heredia</option>
+	<option value="hnal">Hospital Nacional Arzobizpo Loayza </option>
+	<option value="hnr">Hospital Nacional Riabagliati</option>
+	<option value="inm">Instituto Nacional Materno Peritinal</option>
+     </select>
+
+	</div>
+
+<div class="responsive-table Deparatamento">
+		<p>Departamento en el que labora la mayor parte del tiempo</p>
+
+		<p><input type="checkbox" name="Departamento" value="Pre-triaje">Pre-triaje</p>
+		<p><input type="checkbox" name="Departamento" value="Triaje COVID-19">Triaje COVID-19</p>
+		<p><input type="checkbox" name="Departamento" value="Triaje NO COVID-19">Triaje NO COVID-19</p>
+		<p><input type="checkbox" name="Departamento" value="Emergencias COVID-19">Emergencias COVID-19</p>
+		<p><input type="checkbox" name="Departamento" value="Emergencias NO COVID-19">Emergencias NO COVID-19</p>
+		<p><input type="checkbox" name="Departamento" value="Hospitalizaciones COVID-19">Hospitalizaciones COVID-19</p>
+		<p><input type="checkbox" name="Departamento" value="Hospitalizaciones NO COVID-19">Hospitalizaciones NO COVID-19</p>
+		<p><input type="checkbox" name="Departamento" value="Radiologia">Radiologia</p>
+		<p><input type="checkbox" name="Departamento" value="Sala de operaciones">Sala de operaciones</p>
+		<p><input type="checkbox" name="Departamento" value="Telemedicina">Telemedicina</p>
+		<p><input type="checkbox" name="Departamento" value="Otro">Otro <input type="" name="Otro"></p>
+		
+	</div>
+
+	<div class="responsive-table Frecuencia">
+		<p>¿Que tan frecuentemente tiene con pacientes con COVID-19?</p>
+		
+		
+		<p><input type="radio" name="Frecuencia" value="Todos los días">Todos los días</p>
+		<p><input type="radio" name="Frecuencia" value="4-6 dias a la semana">4-6 dias a la semana</p>
+		<p><input type="radio" name="Frecuencia" value="1-3 dias a la semana">1-3 dias a la semana</p>
+		<p><input type="radio" name="Frecuencia" value="Nunca">Nunca</p>
+
+	</div>
+
+	<div class="responsive-table Años de experiencia">
+		<p>Años de experiencia desde su colegiatura como médico</p>
+
+		<p><input type="text" name="nombre" placeholder="Tu respuesta" maxlength="10" required><br></p>
+		
+	</div>
+
+	<div class="responsive-table estadoLaboral">
+    	<p>Estado laboral<span>*</span></p>
+    	<p><input type="radio" name="tipo4" value="Presencial">Presencial</p>
+    	<p><input type="radio" name="tipo4" value="Casa">En aislamiento en casa</p>
+    	<p><input type="radio" name="tipo4" value="Hospital">En aislamiento hospitalizado</p>
+    	<p><input type="radio" name="tipo4" value="Vulnerable">Licencia por se poblacion vulnerable</p>
+    </div>
+    <div class="responsive-table trabajohora">
+    	<p>Horas de trabajo por dia <span>*</span></p>
+    	<p><input type="radio" name="tipo5" value="Aplica">No aplica</p>
+    	<p><input type="radio" name="tipo5" value="0-4 horas">0-4 horas</p>
+    	<p><input type="radio" name="tipo5" value="5-8 horas">5-8 horas</p>
+    	<p><input type="radio" name="tipo5" value="9-12 horas">9-12 horas</p>
+    	<p><input type="radio" name="tipo5" value="13-16 horas">13-16 horas</p>
+    	<p><input type="radio" name="tipo5" value="17 o mas horas">17 o mas horas</p>
+    </div>
+    <div class="responsive-table descansosenamal">
+    	<p>Dias de descanso a la semana<span>*</span></p>
+    	<p><input type="radio" name="tipo6" value="No aplica">No aplica</p>
+    	<p><input type="radio" name="tipo6" value="0">0</p>
+    	<p><input type="radio" name="tipo6" value="1">1</p>
+    	<p><input type="radio" name="tipo6" value="2">2</p>
+    	<p><input type="radio" name="tipo6" value="3 o más">0</p>	
+    </div>
+    <div class="responsive-table contrato">
+	<p>¿Que tipo de contrato hospitalario tiene? <span>*</span></p>
+
+	<p><input type="radio" name="tipo7" value="cas">Servicio CAS</p>
+	<p><input type="radio" name="tipo7" value="tercero">Servicio por terceros</p>
+	<p><input type="radio" name="tipo7" value="Nombrado">Nombrado</p>
+	
+</div>
+
+<div class="responsive-table afectadoeconomia">
+	<p>¿Usted considera que la situación actual por la pandemia por COVID-19 está afectando su economía?<span>*</span></p>
+
+	<p><input type="radio" name="tipo8" value="si">Si</p>
+	<p><input type="radio" name="tipo8" value="no">No</p>
+</div>
+
+<div class="responsive-table satisfecho">
+	<p>¿Se encuentra satisfecho con el equipo de protección personal que le brinda la sede hospitalaria?<span>*</span></p>
+
+	<p><input type="radio" name="tipo9" value="si">Si</p>
+	<p><input type="radio" name="tipo9" value="no">No</p>
+	<p><input type="radio" name="tipo9" value="parcialmente">Parcialmente</p>
+
+</div>
+<div class="responsive-table sintontomas-ultimos-15-dias">
+		<p>
+			¿Usted ha presentado alguno de los siguientes síntomas en los últimos 15 días? 
+			<br>
+			Puede marcar más de una alternativa.<span>*</span>
+		</p>
+		
+         <p><input type="checkbox" name="tos" value="si">Tos</p>
+         <p><input type="checkbox" name="dolor-garganta" value="si">Dolor de garganta</p>
+         <p><input type="checkbox" name="fiebre" value="si">Fiebre</p>
+         <p><input type="checkbox" name="dificultad-respiratoria" value="si">Dificultad respiratoria</p>
+
+         <p><input type="checkbox" name="Anosmia" value="si">Anosmia</p>
+         <p><input type="checkbox" name="congestion" value="si">secresion nasal</p>
+         <p><input type="checkbox" name="fatiga" value="si">Fatiga</p>
+         <p><input type="checkbox" name="diarrea" value="si">Diarrea</p>
+         <p><input type="checkbox" name="mialagas" value="si">Mialagas</p>
+         <p><input type="checkbox" name="otro" value="si">otro</p> <p><input ></p>
+	</div>
+	<div class="responsive-table diagnostico-covid">
+		<p>
+			¿Ha sido diagnosticado con COVID-19? (Por prueba rápida o molecular)<span>*</span>
+		</p>
+		<p><input type="radio" name="tipo10" value="si">Si</p>
+	    <p><input type="radio" name="tipo10" value="no">No</p>
+		
+	</div>
+		<div class="responsive-table discriminacion">
+		<p>
+			¿Ha percibido discriminación por ser personal de salud?<span>*</span>
+		</p>
+		<p><input type="radio" name="tipo11" value="si">Si</p>
+	    <p><input type="radio" name="tipo11" value="no">No</p>
+		
+	</div>
+
+
+	<div class="responsive-table distancia">
+		<p>¿Ha tomado distancia física de su familia para cuidarlos del COVID-19?</p>
+		<p><input type="radio" name="distancia" value="Si">Si</p>
+		<p><input type="radio" name="distancia" value="No">No</p>
+		
+	</div>
+
+	<div class="responsive-table Familiar">
+		<p>¿Algún familiar ha fallecido por COVID-19?</p>
+		<p><input type="radio" name="Familiar" value="Si">Si</p>
+		<p><input type="radio" name="Familiar" value="No">No</p>
+		
+	</div>
+
+	<div class="responsive-table Infectado">
+		<p>¿Algún familiar se ha infectado de COVID-19?</p>
+		<p><input type="radio" name="Infectado" value="Si">Si</p>
+		<p><input type="radio" name="Infectado" value="No">No</p>
+        </div>
+         <div class="responsive-table enfermedades">
+    	<p>¿Sufre de alguna de las siguientes enfermedades? Puede marcar varias alternativas.<span>*</span></p>
+    	<p><input type="checkbox" name="hipertension arterial" value="si">Hipertensión arterial</p>
+    	<p><input type="checkbox" name="obesidad" value="si">Obsesidad</p>
+    	<p><input type="checkbox" name="diabetes mellitus" value="si">Diabetes mellitus</p>
+    	<p><input type="checkbox" name="asma" value="si">Asma bronquial</p>
+    	<p><input type="checkbox" name="epoc" value="si">Epoc</p>
+    	<p><input type="checkbox" name="enfermedad reumatologica" value="si">Enfermedad reumatológica</p>
+    	<p><input type="checkbox" name="otro" value="si">Otro</p>
+    </div>
+    <div class="responsive-table probsueno">
+    	<p>¿En los últimos 15 días ha presentado problemas de sueño?<span>*</span></p>
+    	<p><input type="radio" name="tipo12" value="Si">Si</p>
+    	<p><input type="radio" name="tipo12" value="No">No</p>
+    </div>
+    <div class="responsive-table diagnostico">
+    	<p>¿Ha sido diagnosticado de alguna enfermedad psiquiátrica? Puede marcar varias alternativas.<span>*</span></p>
+    	<p><input type="checkbox" name="ninguna" value="si">Ninguna</p>
+    	<p><input type="checkbox" name="depresion" value="si">Depresion</p>
+    	<p><input type="checkbox" name="Ansiedad" value="si">Ansiedad</p>
+    	<p><input type="checkbox" name="Transtorno" value="si">Transtorno obsesivo compulsivo</p>
+    	<p><input type="checkbox" name="Transtorno bipolar" value="si">Transtorno bipolar</p>
+    	<p><input type="checkbox" name="otro" value="si">Otro</p>
+    </div>
+    <div class="responsive-table tratamiento">
+    	<p>¿Usted considera que la situación actual por la pandemia por COVID-19 está afectando su salud mental?<span>*</span></p>
+    	<p><input type="radio" name="tipo13" value="si">Si</p>
+    	<p><input type="radio" name="tipo13" value="No">No</p>
+	</div>
+	
+    <section class="botones">
+		<input  class="btn btn-success" type="submit" name="aceptar" value="Siguiente" ><a  href="pagina2.html"></a>
+	</section>
+
+</form>
+</body>
+</html>
