@@ -1,0 +1,98 @@
+*{
+padding: 0px;
+	box-sizing: border-box;
+}
+
+body{
+	background-color: 	#E6E6FA;
+	align-items: center;
+	font-family: sans-serif;
+}
+div{
+	margin: 20px auto;
+	background-color: white;
+	width: 650px;
+  padding:20px;
+  box-shadow: 5px 5px 10px 2px black;
+	border-radius: 10px 10px 10px 10px;
+
+}
+span{
+	color: red;
+}
+
+.form-matrix-table tr:nth-child(2n) {
+    background-color: #f2f2f2;
+}
+
+
+.form-matrix-table {
+    border-collapse: collapse;
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 2px;
+}
+
+.botoncito input  {
+
+background-color: white;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.hola{
+	background-color: white;
+	overflow: hidden;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display:inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+.botoncito{
+	margin-left: 40%;
+}
+
+   .encabezado{
+   	
+   	background-color: white;
+	border-top: #465AEE 15px solid; 
+	
+   }
+   .btnanterior{
+   	display: inline-block;
+   	padding-left: 40%;
+   }
+
+   /*BOTONES LINEALES*/
+   .botones{
+     text-align: center;
+     text-decoration: none;
+     padding-top: 20px;
+     padding-bottom: 50px;
+   }
+  
+
+   /*RESPONSIVE*/
+   @media (max-width: 700px) {
+    .responsive-table{width: 80%;}
+
+  }
+  
+   @media (max-width: 575.98px) {
+    .responsive-table{width: 80%;}
+   }
+
